@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.VerNotaActivity">
+
+
+    <ImageView
+        android:id="@+id/imgLugar"
+        android:layout_width="150dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="28dp"
+        android:background="#90D573"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/txt_description"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/txt_description"
+        app:layout_constraintTop_toBottomOf="@+id/txt_description"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="179dp"
+        android:layout_height="31dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="70dp"
+        android:gravity="start"
+        android:text="Playa la Concha"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="222dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:text="la segunda playa mas bonita de Europa"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="233dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="116dp"
+        android:progressTint="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgLugar"
+        app:layout_constraintStart_toStartOf="@+id/imgLugar"
+        app:layout_constraintTop_toBottomOf="@+id/imgLugar" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fbEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="34dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/rating"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50093806" />
+
+</android.support.constraint.ConstraintLayout>
